@@ -5,7 +5,7 @@
 <img width="647" src="https://user-images.githubusercontent.com/71256/29091486-fa38524c-7c37-11e7-895f-e7ec8e1039b6.png">
 
 A tiny JavaScript debugging utility modelled after Node.js core's debugging
-technique. Works in Node.js and web browsers.
+technique. Works in Node.js, web browsers and React-Native.
 
 ## Installation
 
@@ -269,7 +269,7 @@ log('still goes to stdout, but via console.info now');
 ```
 
 ## Extend
-You can simply extend debugger 
+You can simply extend debugger
 ```js
 const log = require('debug')('auth');
 
@@ -309,8 +309,8 @@ print :
 Usage :  
 `enable(namespaces)`  
 `namespaces` can include modes separated by a colon and wildcards.
-   
-Note that calling `enable()` completely overrides previously set DEBUG variable : 
+
+Note that calling `enable()` completely overrides previously set DEBUG variable :
 
 ```
 $ DEBUG=foo node -e 'var dbg = require("debug"); dbg.enable("bar"); console.log(dbg.enabled("foo"))'
